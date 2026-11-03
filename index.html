@@ -16,6 +16,10 @@
   a { color: var(--burn); }
   nav a { margin-right: 1rem; }
   code { font-family: ui-monospace, monospace; font-size: 0.9em; }
+  .cta { display: inline-block; margin: 0.4rem 0.6rem 0.4rem 0; padding: 0.55rem 0.9rem; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; color: var(--ink); }
+  .cta.primary { border-color: var(--burn); color: var(--burn); }
+  .note { color: var(--mute); font-size: 0.95rem; }
+  .frame { width: 100%; height: 70vh; min-height: 420px; border: 1px solid var(--line); border-radius: 8px; background: #000; }
 </style>
 </head>
 <body>
@@ -23,9 +27,24 @@
   <h1>Periapsis</h1>
   <p class="sub">Claim the System. A paid offline iPhone game from <a href="https://clarkestudios.com/">Clarke Studios</a>. No account, no ads, no in-app purchases.</p>
   <nav>
+    <a href="#play">Play</a>
+    <a href="#beta">Beta</a>
     <a href="#privacy">Privacy</a>
     <a href="#support">Support</a>
   </nav>
+  <p>
+    <a class="cta primary" href="#play">Web demo</a>
+    <a class="cta" href="#beta">TestFlight</a>
+  </p>
+
+  <h2 id="play">Web demo</h2>
+  <p class="note">Same build that ships on iPhone. Best on a phone-sized window. Progress stays in this browser only.</p>
+  <p class="note">Embed the built <code>dist/app/index.html</code> (or a hosted copy) here after Drew approves publishing the web build. Placeholder until then:</p>
+  <p><a class="cta" href="https://github.com/CHIMERNAND/periapsis">Open the game repo</a></p>
+
+  <h2 id="beta">TestFlight</h2>
+  <p>Public link placeholder — Drew creates the public TestFlight link in App Store Connect, then replace this paragraph with the URL.</p>
+  <p class="note">Internal testers: use the invite from App Store Connect until the public link exists.</p>
 
   <h2 id="privacy">Privacy</h2>
   <p>Periapsis does not collect data. It does not track you. Nothing is linked to your identity, and nothing is used for tracking or advertising.</p>
